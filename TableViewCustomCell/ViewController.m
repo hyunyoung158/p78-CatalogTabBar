@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "ProductCell.h"
 #import "Product.h"
+#import "ProductCell.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>{
-    NSArray *data;
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate> {
+	NSArray *data;
 }
 
 @end
@@ -19,25 +19,28 @@
 @implementation ViewController
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [data count];
+	return [data count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PRODUCT_CELL" forIndexPath:indexPath];
-    
-    Product *item = data[indexPath.row];
-    [cell setProductInfo:item];
-    
-    return cell;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PRODUCT_CELL"];
+	
+	Product *item = data[indexPath.row];
+	[cell setProductInfo:item];
+	
+	return cell;
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    data = @[[Product product:@"Baseball" price:@"100" image:@"girl0.jpg"],
-             [Product product:@"Football" price:@"200" image:@"girl1.jpg"],
-             [Product product:@"Rugbyball" price:@"300" image:@"girl2.jpg"],
-             [Product product:@"Willson" price:@"400" image:@"girl3.jpg"]];
+	// Do any additional setup after loading the view, typically from a nib.
+	
+	data = @[[Product product:@"Ball1" price:@"100" image:@"ball1.png"],
+             [Product product:@"Ball2" price:@"200" image:@"ball2.png"],
+			 [Product product:@"Ball3" price:@"300" image:@"ball3.png"],
+			 ];
+	
 }
 
 - (void)didReceiveMemoryWarning

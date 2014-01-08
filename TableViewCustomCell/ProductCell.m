@@ -10,11 +10,26 @@
 
 @implementation ProductCell
 
-- (void)setProductInfo:(Product *)item {
-    _productName.text = item.name;
-    _productPrice.text = item.price;
-    _productImage.image = [UIImage imageNamed:item.imageName];
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        // Initialization code
+    }
+    return self;
 }
 
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
+    [super setSelected:selected animated:animated];
+    
+    // Configure the view for the selected state
+}
+
+- (void)setProductInfo:(Product *)item {
+	self.productName.text = item.name;
+	self.productPrice.text = item.price;
+	self.productImage.image = [UIImage imageNamed:item.imageName];
+}
 
 @end

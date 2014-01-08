@@ -10,14 +10,13 @@
 
 @implementation Product
 
-//팩토리 메소드
 + (id)product:(NSString *)name price:(NSString *)price image:(NSString *)image {
-    Product *item = [[Product alloc] init];
-    item.name = name;
-    item.price = price;
-    item.imageName = image;
-    
-    return item;
+	Product *item = [[Product alloc] init];
+	item.name = name;
+	item.price = price;
+	item.imageName = image;
+	
+	return item;
 }
 
 @end

@@ -10,9 +10,9 @@
 
 @interface Product : NSObject
 
-@property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *price;
-@property (strong, nonatomic) NSString *imageName;
+@property (strong,nonatomic) NSString *name;
+@property (strong,nonatomic) NSString *price;
+@property (strong,nonatomic) NSString *imageName;
 
 + (id)product:(NSString *)name price:(NSString *)price image:(NSString *)image;
 
