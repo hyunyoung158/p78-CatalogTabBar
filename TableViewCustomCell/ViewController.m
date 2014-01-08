@@ -10,13 +10,13 @@
 #import "ProductCell.h"
 #import "Product.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>{
+    NSArray *data;
+}
 
 @end
 
-@implementation ViewController {
-    NSArray *data;
-}
+@implementation ViewController
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [data count];
@@ -34,10 +34,10 @@
 {
     [super viewDidLoad];
 
-    data = @[[Product product:@"Baseball" price:@"100" image:@"baseball.png"],
-             [Product product:@"Football" price:@"200" image:@"football.png"],
-             [Product product:@"Rugbyball" price:@"300" image:@"rugbyball.png"],
-             [Product product:@"Willson" price:@"400" image:@"volleyball.png"]];
+    data = @[[Product product:@"Baseball" price:@"100" image:@"girl0.jpg"],
+             [Product product:@"Football" price:@"200" image:@"girl1.jpg"],
+             [Product product:@"Rugbyball" price:@"300" image:@"girl2.jpg"],
+             [Product product:@"Willson" price:@"400" image:@"girl3.jpg"]];
 }
 
 - (void)didReceiveMemoryWarning

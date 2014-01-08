@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 #import "ProductCell.h"
-@interface ViewController : UITableViewController
+@interface ViewController : UIViewController
 @end

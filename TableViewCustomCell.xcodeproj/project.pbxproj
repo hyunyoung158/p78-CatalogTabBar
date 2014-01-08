@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0072922C187CE7B3001550EB /* girl1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00729228187CE7B3001550EB /* girl1.jpg */; };
+		0072922D187CE7B3001550EB /* girl2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00729229187CE7B3001550EB /* girl2.jpg */; };
+		0072922E187CE7B3001550EB /* girl3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0072922A187CE7B3001550EB /* girl3.jpg */; };
+		0072922F187CE7B3001550EB /* girl0.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0072922B187CE7B3001550EB /* girl0.JPG */; };
 		8BC1B0FA187C140000620D75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0F9187C140000620D75 /* Foundation.framework */; };
 		8BC1B0FC187C140000620D75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0FB187C140000620D75 /* CoreGraphics.framework */; };
 		8BC1B0FE187C140000620D75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0FD187C140000620D75 /* UIKit.framework */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00729228187CE7B3001550EB /* girl1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl1.jpg; sourceTree = "<group>"; };
+		00729229187CE7B3001550EB /* girl2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl2.jpg; sourceTree = "<group>"; };
+		0072922A187CE7B3001550EB /* girl3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl3.jpg; sourceTree = "<group>"; };
+		0072922B187CE7B3001550EB /* girl0.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl0.JPG; sourceTree = "<group>"; };
 		8BC1B0F6187C140000620D75 /* TableViewCustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCustomCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC1B0F9187C140000620D75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BC1B0FB187C140000620D75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +126,10 @@
 		8BC1B0FF187C140000620D75 /* TableViewCustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				00729228187CE7B3001550EB /* girl1.jpg */,
+				00729229187CE7B3001550EB /* girl2.jpg */,
+				0072922A187CE7B3001550EB /* girl3.jpg */,
+				0072922B187CE7B3001550EB /* girl0.JPG */,
 				8BC1B108187C140000620D75 /* AppDelegate.h */,
 				8BC1B109187C140000620D75 /* AppDelegate.m */,
 				8BC1B10B187C140000620D75 /* Main.storyboard */,
@@ -239,8 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BC1B112187C140100620D75 /* Images.xcassets in Resources */,
+				0072922E187CE7B3001550EB /* girl3.jpg in Resources */,
 				8BC1B104187C140000620D75 /* InfoPlist.strings in Resources */,
 				8BC1B10D187C140000620D75 /* Main.storyboard in Resources */,
+				0072922D187CE7B3001550EB /* girl2.jpg in Resources */,
+				0072922C187CE7B3001550EB /* girl1.jpg in Resources */,
+				0072922F187CE7B3001550EB /* girl0.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +488,7 @@
 				8BC1B12A187C140100620D75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BC1B12B187C140100620D75 /* Build configuration list for PBXNativeTarget "TableViewCustomCellTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +497,7 @@
 				8BC1B12D187C140100620D75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
