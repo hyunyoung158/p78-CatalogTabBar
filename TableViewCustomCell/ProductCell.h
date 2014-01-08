@@ -10,9 +10,10 @@
 #import "Product.h"
 @interface ProductCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *productName;
-@property (weak, nonatomic) IBOutlet UILabel *productPrice;
 @property (weak, nonatomic) IBOutlet UIImageView *productImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *productPrice;
+@property (weak, nonatomic) IBOutlet UILabel *productName;
 
 - (void)setProductInfo:(Product *)item;
 @end
