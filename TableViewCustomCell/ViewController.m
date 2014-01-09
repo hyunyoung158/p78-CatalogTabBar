@@ -10,24 +10,47 @@
 #import "Product.h"
 #import "ProductCell.h"
 #import "Catalog.h"
+#import "Cart.h"
+#import "CartCell.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate, CartDelegate> {
-	NSMutableArray *cartItems;
-}
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, CartDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
+@property (strong, nonatomic) Cart *cart;
 @end
 
 @implementation ViewController
+
+//카트 내 상품 수량 증가
+- (void)incQuantity:(NSString *)productCode {
+    [self.cart incQuantity:productCode];
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+//카트 내 상품 수량 감소
+- (void)decQuantity:(NSString *)productCode {
+    [self.cart decQuantity:productCode];
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
 
 //카탈로그 델리게이트 : 제품을 카트에 추가한다.
 - (void)addItem:(id)sender {
     //제품 식별자를 위한 인덱스
     NSIndexPath *indexPath = [self.table indexPathForCell:sender];
     Product *product = [[Catalog defaultCatalog] productAt:(int)indexPath.row];
+
+    if (![self.cart cartItemWith:product.productCode]) {
+        //없는 경우 카트에 추가
+        [self.cart addProduct:product];
+    }else {
+        //이미 있는 상품일 경우 incQuantity
+        [self.cart incQuantity:product.productCode];
+    }
     
-    [cartItems addObject:product];
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];     // 이게뭐징
+
+    
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
     [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
@@ -40,7 +63,7 @@
     if (0 == section) {
         return [[Catalog defaultCatalog] numberOfProducts];
     }else {
-        return [cartItems count];
+        return [self.cart.items count];
     }
 }
 
@@ -55,9 +78,11 @@
         return cell;
     }else {
         //2번째 섹션은 카트
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CART_CELL" forIndexPath:indexPath];
-        Product *product = cartItems[indexPath.row];
-        cell.textLabel.text = product.name;
+        CartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CART_CELL" forIndexPath:indexPath];
+        cell.delegate = self;
+        CartItem *cartItem = self.cart.items[indexPath.row];
+        
+        [cell setCartItem:cartItem];
         return cell;
     }
 }
@@ -74,7 +99,7 @@
 {
     [super viewDidLoad];
     
-	cartItems = [[NSMutableArray alloc] init];
+    self.cart = [[Cart alloc] init];
 }
 
 - (void)didReceiveMemoryWarning

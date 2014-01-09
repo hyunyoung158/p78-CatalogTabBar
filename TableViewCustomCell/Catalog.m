@@ -26,9 +26,10 @@ static Catalog *_instance = nil;
 - (id)init {
     self = [super init];
     if (self) {
-        _data = @[[Product productWithName:@"Baseball" price:100 image:@"baseball.png"],
-                  [Product productWithName:@"Basketball" price:200 image:@"basketball.png"],
-                  [Product productWithName:@"Volleyball" price:300 image:@"volleyball.png"]];
+        _data = @[[Product productWithName:@"Baseball" price:100 image:@"baseball.png" productCode:@"0"],
+                  [Product productWithName:@"Basketball" price:200 image:@"basketball.png" productCode:@"1"],
+                  [Product productWithName:@"Volleyball" price:300 image:@"volleyball.png" productCode:@"2"],
+                  [Product productWithName:@"Football" price:400 image:@"football.png" productCode:@"3"]];
     }
     return self;
 }
