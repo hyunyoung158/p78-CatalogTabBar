@@ -24,14 +24,12 @@
 //카트 내 상품 수량 증가
 - (void)incQuantity:(NSString *)productCode {
     [self.cart incQuantity:productCode];
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
-    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self reloadCartSection];
 }
 //카트 내 상품 수량 감소
 - (void)decQuantity:(NSString *)productCode {
     [self.cart decQuantity:productCode];
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
-    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self reloadCartSection];
 }
 
 //카탈로그 델리게이트 : 제품을 카트에 추가한다.
@@ -39,7 +37,8 @@
     //제품 식별자를 위한 인덱스
     NSIndexPath *indexPath = [self.table indexPathForCell:sender];
     Product *product = [[Catalog defaultCatalog] productAt:(int)indexPath.row];
-
+    
+    //핵심 코드
     if (![self.cart cartItemWith:product.productCode]) {
         //없는 경우 카트에 추가
         [self.cart addProduct:product];
@@ -47,13 +46,13 @@
         //이미 있는 상품일 경우 incQuantity
         [self.cart incQuantity:product.productCode];
     }
-    
-
-    
+    [self reloadCartSection];
+}
+// 카트 섹션 리로드
+- (void)reloadCartSection {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
     [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
-
 //섹션 0 : 카탈로그, 섹션1 : 카트
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;

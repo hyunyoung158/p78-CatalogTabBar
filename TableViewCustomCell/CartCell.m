@@ -29,7 +29,7 @@
 
 //셀에 반영할 내용
 - (void)setCartItem:(CartItem *)item {
-    //제품 구별용 코드
+    //제품 구별용 코드 - 카탈로그 셀 선택시 상품코드 받아옴.
     self.productCode = item.product.productCode;
     
     // 셀 반영

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "CartItem.h"
 
+@class Product;
+
 @interface Cart : NSObject
 
 @property NSMutableArray *items;
