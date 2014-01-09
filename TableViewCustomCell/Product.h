@@ -11,9 +11,9 @@
 @interface Product : NSObject
 
 @property (strong,nonatomic) NSString *name;
-@property (strong,nonatomic) NSString *price;
+@property (nonatomic) NSInteger price;
 @property (strong,nonatomic) NSString *imageName;
 
-+ (id)product:(NSString *)name price:(NSString *)price image:(NSString *)image;
++ (id)productWithName:(NSString *)name price:(NSInteger)price image:(NSString *)image;
 
 @end

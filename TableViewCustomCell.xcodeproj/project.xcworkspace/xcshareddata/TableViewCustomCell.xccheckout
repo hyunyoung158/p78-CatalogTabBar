@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FC30EEF0-54E4-4CB8-A7D7-6BEE5507AB81</string>
+	<string>98C73DCE-5F6E-4852-A094-BF20A7548C1F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TableViewCustomCell</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/hyunyoung158/p194-TableViewCustomCell.git</string>
+	<string>https://github.com/hyunyoung158/ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

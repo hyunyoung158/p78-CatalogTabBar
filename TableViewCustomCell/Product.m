@@ -10,7 +10,7 @@
 
 @implementation Product
 
-+ (id)product:(NSString *)name price:(NSString *)price image:(NSString *)image {
++ (id)productWithName:(NSString *)name price:(NSInteger)price image:(NSString *)image {
 	Product *item = [[Product alloc] init];
 	item.name = name;
 	item.price = price;

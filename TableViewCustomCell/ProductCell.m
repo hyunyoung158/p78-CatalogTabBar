@@ -7,6 +7,12 @@
 //
 
 #import "ProductCell.h"
+@interface ProductCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *productName;
+@property (weak, nonatomic) IBOutlet UILabel *productPrice;
+@property (weak, nonatomic) IBOutlet UIImageView *productImage;
+@end
 
 @implementation ProductCell
 
@@ -28,8 +34,12 @@
 
 - (void)setProductInfo:(Product *)item {
 	self.productName.text = item.name;
-	self.productPrice.text = item.price;
+	self.productPrice.text = [NSString stringWithFormat:@"%d", (int)item.price];
 	self.productImage.image = [UIImage imageNamed:item.imageName];
+}
+
+- (IBAction)addCart:(id)sender {
+    [self.delegate addItem:self];
 }
 
 @end
