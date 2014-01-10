@@ -15,6 +15,7 @@
 		00ABAC86187E74340082D5A1 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABAC85187E74340082D5A1 /* Cart.m */; };
 		00ABAC89187E76450082D5A1 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABAC88187E76450082D5A1 /* CartCell.m */; };
 		00ABAC8C187E78320082D5A1 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABAC8B187E78320082D5A1 /* CartItem.m */; };
+		00ABADC1187FDE090082D5A1 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABADC0187FDE090082D5A1 /* ProductDetailViewController.m */; };
 		8BC1B0FA187C140000620D75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0F9187C140000620D75 /* Foundation.framework */; };
 		8BC1B0FC187C140000620D75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0FB187C140000620D75 /* CoreGraphics.framework */; };
 		8BC1B0FE187C140000620D75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0FD187C140000620D75 /* UIKit.framework */; };
@@ -44,19 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00729230187CF881001550EB /* baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseball.png; sourceTree = "<group>"; };
-		00ABAC7A187E5C340082D5A1 /* CartDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartDelegate.h; sourceTree = "<group>"; };
-		00ABAC7B187E5DFF0082D5A1 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
-		00ABAC7C187E5DFF0082D5A1 /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
-		00ABAC7E187E73BD0082D5A1 /* basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basketball.png; sourceTree = "<group>"; };
-		00ABAC7F187E73BD0082D5A1 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
-		00ABAC80187E73BD0082D5A1 /* volleyball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volleyball.png; sourceTree = "<group>"; };
-		00ABAC84187E74340082D5A1 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
-		00ABAC85187E74340082D5A1 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
-		00ABAC87187E76450082D5A1 /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCell.h; sourceTree = "<group>"; };
-		00ABAC88187E76450082D5A1 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
-		00ABAC8A187E78320082D5A1 /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
-		00ABAC8B187E78320082D5A1 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		00729230187CF881001550EB /* baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baseball.png; path = TableViewCustomCell/baseball.png; sourceTree = "<group>"; };
+		00ABAC7A187E5C340082D5A1 /* CartDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CartDelegate.h; path = TableViewCustomCell/CartDelegate.h; sourceTree = "<group>"; };
+		00ABAC7B187E5DFF0082D5A1 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Catalog.h; path = TableViewCustomCell/Catalog.h; sourceTree = "<group>"; };
+		00ABAC7C187E5DFF0082D5A1 /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Catalog.m; path = TableViewCustomCell/Catalog.m; sourceTree = "<group>"; };
+		00ABAC7E187E73BD0082D5A1 /* basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basketball.png; path = TableViewCustomCell/basketball.png; sourceTree = "<group>"; };
+		00ABAC7F187E73BD0082D5A1 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = football.png; path = TableViewCustomCell/football.png; sourceTree = "<group>"; };
+		00ABAC80187E73BD0082D5A1 /* volleyball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = volleyball.png; path = TableViewCustomCell/volleyball.png; sourceTree = "<group>"; };
+		00ABAC84187E74340082D5A1 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cart.h; path = TableViewCustomCell/Cart.h; sourceTree = "<group>"; };
+		00ABAC85187E74340082D5A1 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cart.m; path = TableViewCustomCell/Cart.m; sourceTree = "<group>"; };
+		00ABAC87187E76450082D5A1 /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartCell.h; path = TableViewCustomCell/CartCell.h; sourceTree = "<group>"; };
+		00ABAC88187E76450082D5A1 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartCell.m; path = TableViewCustomCell/CartCell.m; sourceTree = "<group>"; };
+		00ABAC8A187E78320082D5A1 /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartItem.h; path = TableViewCustomCell/CartItem.h; sourceTree = "<group>"; };
+		00ABAC8B187E78320082D5A1 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartItem.m; path = TableViewCustomCell/CartItem.m; sourceTree = "<group>"; };
+		00ABADBF187FDE090082D5A1 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		00ABADC0187FDE090082D5A1 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		8BC1B0F6187C140000620D75 /* TableViewCustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCustomCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC1B0F9187C140000620D75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BC1B0FB187C140000620D75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,10 +109,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00ABADBA187FDC710082D5A1 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				00ABAC7A187E5C340082D5A1 /* CartDelegate.h */,
+				00ABAC7B187E5DFF0082D5A1 /* Catalog.h */,
+				00ABAC7C187E5DFF0082D5A1 /* Catalog.m */,
+				00ABAC84187E74340082D5A1 /* Cart.h */,
+				00ABAC85187E74340082D5A1 /* Cart.m */,
+				00ABAC87187E76450082D5A1 /* CartCell.h */,
+				00ABAC88187E76450082D5A1 /* CartCell.m */,
+				00ABAC8A187E78320082D5A1 /* CartItem.h */,
+				00ABAC8B187E78320082D5A1 /* CartItem.m */,
+			);
+			name = Cart;
+			sourceTree = "<group>";
+		};
+		00ABADBB187FDC820082D5A1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				00ABAC7E187E73BD0082D5A1 /* basketball.png */,
+				00ABAC7F187E73BD0082D5A1 /* football.png */,
+				00ABAC80187E73BD0082D5A1 /* volleyball.png */,
+				00729230187CF881001550EB /* baseball.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		8BC1B0ED187C140000620D75 = {
 			isa = PBXGroup;
 			children = (
+				00ABADBB187FDC820082D5A1 /* images */,
+				00ABADBA187FDC710082D5A1 /* Cart */,
 				8BC1B0FF187C140000620D75 /* TableViewCustomCell */,
+				8BC1B100187C140000620D75 /* Supporting Files */,
 				8BC1B11E187C140100620D75 /* TableViewCustomCellTests */,
 				8BC1B0F8187C140000620D75 /* Frameworks */,
 				8BC1B0F7187C140000620D75 /* Products */,
@@ -139,30 +172,18 @@
 		8BC1B0FF187C140000620D75 /* TableViewCustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				00ABAC7E187E73BD0082D5A1 /* basketball.png */,
-				00ABAC7F187E73BD0082D5A1 /* football.png */,
-				00ABAC80187E73BD0082D5A1 /* volleyball.png */,
-				00729230187CF881001550EB /* baseball.png */,
 				8BC1B108187C140000620D75 /* AppDelegate.h */,
 				8BC1B109187C140000620D75 /* AppDelegate.m */,
 				8BC1B10B187C140000620D75 /* Main.storyboard */,
 				8BC1B10E187C140000620D75 /* ViewController.h */,
 				8BC1B10F187C140000620D75 /* ViewController.m */,
 				8BC1B111187C140100620D75 /* Images.xcassets */,
-				8BC1B100187C140000620D75 /* Supporting Files */,
 				8BC1B12E187C14C900620D75 /* ProductCell.h */,
 				8BC1B12F187C14C900620D75 /* ProductCell.m */,
 				8BC1B131187C1B1E00620D75 /* Product.h */,
 				8BC1B132187C1B1F00620D75 /* Product.m */,
-				00ABAC7A187E5C340082D5A1 /* CartDelegate.h */,
-				00ABAC7B187E5DFF0082D5A1 /* Catalog.h */,
-				00ABAC7C187E5DFF0082D5A1 /* Catalog.m */,
-				00ABAC84187E74340082D5A1 /* Cart.h */,
-				00ABAC85187E74340082D5A1 /* Cart.m */,
-				00ABAC87187E76450082D5A1 /* CartCell.h */,
-				00ABAC88187E76450082D5A1 /* CartCell.m */,
-				00ABAC8A187E78320082D5A1 /* CartItem.h */,
-				00ABAC8B187E78320082D5A1 /* CartItem.m */,
+				00ABADBF187FDE090082D5A1 /* ProductDetailViewController.h */,
+				00ABADC0187FDE090082D5A1 /* ProductDetailViewController.m */,
 			);
 			path = TableViewCustomCell;
 			sourceTree = "<group>";
@@ -176,6 +197,7 @@
 				8BC1B107187C140000620D75 /* TableViewCustomCell-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = TableViewCustomCell;
 			sourceTree = "<group>";
 		};
 		8BC1B11E187C140100620D75 /* TableViewCustomCellTests */ = {
@@ -298,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00ABAC86187E74340082D5A1 /* Cart.m in Sources */,
+				00ABADC1187FDE090082D5A1 /* ProductDetailViewController.m in Sources */,
 				8BC1B110187C140000620D75 /* ViewController.m in Sources */,
 				8BC1B133187C1B1F00620D75 /* Product.m in Sources */,
 				8BC1B130187C14C900620D75 /* ProductCell.m in Sources */,

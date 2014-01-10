@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Product.h"
 
 @interface Catalog : NSObject
 
@@ -15,4 +16,5 @@
 
 //싱글턴 방식으로 카탈로그 사용
 + (id)defaultCatalog;
+- (Product *)productWithCode:(NSString *)productCode;
 @end

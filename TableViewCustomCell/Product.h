@@ -14,7 +14,8 @@
 @property (nonatomic) NSInteger price;
 @property (strong,nonatomic) NSString *imageName;
 @property (strong, nonatomic) NSString *productCode;
+@property (strong, nonatomic) NSString *productDetail;
 
-+ (id)productWithName:(NSString *)name price:(NSInteger)price image:(NSString *)image productCode:(NSString *)productCode;
++ (id)productWithName:(NSString *)name price:(NSInteger)price image:(NSString *)image productCode:(NSString *)productCode productDetail:(NSString *)productDetail;
 - (BOOL)isEqualProduct:(NSString *)productCode;
 @end

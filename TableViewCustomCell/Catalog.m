@@ -26,10 +26,10 @@ static Catalog *_instance = nil;
 - (id)init {
     self = [super init];
     if (self) {
-        _data = @[[Product productWithName:@"Baseball" price:100 image:@"baseball.png" productCode:@"0"],
-                  [Product productWithName:@"Basketball" price:200 image:@"basketball.png" productCode:@"1"],
-                  [Product productWithName:@"Volleyball" price:300 image:@"volleyball.png" productCode:@"2"],
-                  [Product productWithName:@"Football" price:400 image:@"football.png" productCode:@"3"]];
+        _data = @[[Product productWithName:@"Baseball" price:100 image:@"baseball.png" productCode:@"0" productDetail:@"롯데 삼성 한화 류현진 추신수 클리브랜드 텍사스 LA다저스 런닝맨 류현진 치킨왕 치킨..먹고싶다."],
+                  [Product productWithName:@"Basketball" price:200 image:@"basketball.png" productCode:@"1" productDetail:@"This is Basketball. i don't like basketball."],
+                  [Product productWithName:@"Volleyball" price:300 image:@"volleyball.png" productCode:@"2" productDetail:@"배구공!배구배구 배구공으로 배구를 한적이 없네요. 피구왕 통키가 사용하면 불이 붙는 이상한 공입니다."],
+                  [Product productWithName:@"Football" price:400 image:@"football.png" productCode:@"3" productDetail:@"축구축구 추추축구 축구 이청용 축구 축구구축구 싸커맨 예!/ㅇ0ㅇ/!!"]];
     }
     return self;
 }
@@ -42,5 +42,15 @@ static Catalog *_instance = nil;
 //제품의 개수
 - (NSInteger)numberOfProducts {
     return [_data count];
+}
+
+//제품 코드를이용해서 제품 정보를 얻어온다.
+- (Product *)productWithCode:(NSString *)productCode {
+    for (Product *one in _data) {
+        if ([one isEqualProduct:productCode]) {
+            return  one;
+        }
+    }
+    return nil;
 }
 @end

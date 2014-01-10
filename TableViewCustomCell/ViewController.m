@@ -12,6 +12,7 @@
 #import "Catalog.h"
 #import "Cart.h"
 #import "CartCell.h"
+#import "ProductDetailViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, CartDelegate>
 
@@ -20,6 +21,17 @@
 @end
 
 @implementation ViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //제품 상세보기 뷰 컨트롤러
+    ProductDetailViewController *detailVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = [self.table indexPathForCell:sender];
+    Product *selectedProduct = [[Catalog defaultCatalog] productAt:indexPath.row];
+    
+    //제품의 코드를 넘겨준다.
+    detailVC.productCode = selectedProduct.productCode;
+}
 
 //카트 내 상품 수량 증가
 - (void)incQuantity:(NSString *)productCode {
@@ -94,11 +106,21 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.cart = [[Cart alloc] init];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning

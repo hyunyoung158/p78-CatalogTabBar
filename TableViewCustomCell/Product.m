@@ -10,12 +10,13 @@
 
 @implementation Product
 
-+ (id)productWithName:(NSString *)name price:(NSInteger)price image:(NSString *)image productCode:(NSString *)productCode{
++ (id)productWithName:(NSString *)name price:(NSInteger)price image:(NSString *)image productCode:(NSString *)productCode productDetail:(NSString *)productDetail{
 	Product *item = [[Product alloc] init];
 	item.name = name;
 	item.price = price;
 	item.imageName = image;
 	item.productCode = productCode;
+    item.productDetail = productDetail;
     
 	return item;
 }
