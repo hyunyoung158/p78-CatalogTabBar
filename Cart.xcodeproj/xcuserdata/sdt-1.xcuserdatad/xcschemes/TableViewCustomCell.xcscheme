@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BC1B0F5187C140000620D75"
                BuildableName = "TableViewCustomCell.app"
-               BlueprintName = "TableViewCustomCell"
-               ReferencedContainer = "container:TableViewCustomCell.xcodeproj">
+               BlueprintName = "Cart"
+               ReferencedContainer = "container:Cart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BC1B116187C140100620D75"
                BuildableName = "TableViewCustomCellTests.xctest"
-               BlueprintName = "TableViewCustomCellTests"
-               ReferencedContainer = "container:TableViewCustomCell.xcodeproj">
+               BlueprintName = "CartTests"
+               ReferencedContainer = "container:Cart.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BC1B0F5187C140000620D75"
             BuildableName = "TableViewCustomCell.app"
-            BlueprintName = "TableViewCustomCell"
-            ReferencedContainer = "container:TableViewCustomCell.xcodeproj">
+            BlueprintName = "Cart"
+            ReferencedContainer = "container:Cart.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BC1B0F5187C140000620D75"
             BuildableName = "TableViewCustomCell.app"
-            BlueprintName = "TableViewCustomCell"
-            ReferencedContainer = "container:TableViewCustomCell.xcodeproj">
+            BlueprintName = "Cart"
+            ReferencedContainer = "container:Cart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BC1B0F5187C140000620D75"
             BuildableName = "TableViewCustomCell.app"
-            BlueprintName = "TableViewCustomCell"
-            ReferencedContainer = "container:TableViewCustomCell.xcodeproj">
+            BlueprintName = "Cart"
+            ReferencedContainer = "container:Cart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -60,23 +60,23 @@
 		00ABAC8B187E78320082D5A1 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartItem.m; path = TableViewCustomCell/CartItem.m; sourceTree = "<group>"; };
 		00ABADBF187FDE090082D5A1 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		00ABADC0187FDE090082D5A1 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
-		8BC1B0F6187C140000620D75 /* TableViewCustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCustomCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC1B0F6187C140000620D75 /* Cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC1B0F9187C140000620D75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BC1B0FB187C140000620D75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8BC1B0FD187C140000620D75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8BC1B101187C140000620D75 /* TableViewCustomCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCustomCell-Info.plist"; sourceTree = "<group>"; };
+		8BC1B101187C140000620D75 /* Cart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cart-Info.plist"; sourceTree = "<group>"; };
 		8BC1B103187C140000620D75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8BC1B105187C140000620D75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8BC1B107187C140000620D75 /* TableViewCustomCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewCustomCell-Prefix.pch"; sourceTree = "<group>"; };
+		8BC1B107187C140000620D75 /* Cart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cart-Prefix.pch"; sourceTree = "<group>"; };
 		8BC1B108187C140000620D75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BC1B109187C140000620D75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8BC1B10C187C140000620D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BC1B10E187C140000620D75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8BC1B10F187C140000620D75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8BC1B111187C140100620D75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8BC1B117187C140100620D75 /* TableViewCustomCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCustomCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC1B117187C140100620D75 /* CartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC1B118187C140100620D75 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8BC1B120187C140100620D75 /* TableViewCustomCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCustomCellTests-Info.plist"; sourceTree = "<group>"; };
+		8BC1B120187C140100620D75 /* CartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CartTests-Info.plist"; sourceTree = "<group>"; };
 		8BC1B122187C140100620D75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8BC1B124187C140100620D75 /* TableViewCustomCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCustomCellTests.m; sourceTree = "<group>"; };
 		8BC1B12E187C14C900620D75 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
@@ -152,8 +152,8 @@
 		8BC1B0F7187C140000620D75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BC1B0F6187C140000620D75 /* TableViewCustomCell.app */,
-				8BC1B117187C140100620D75 /* TableViewCustomCellTests.xctest */,
+				8BC1B0F6187C140000620D75 /* Cart.app */,
+				8BC1B117187C140100620D75 /* CartTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,10 +191,10 @@
 		8BC1B100187C140000620D75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BC1B101187C140000620D75 /* TableViewCustomCell-Info.plist */,
+				8BC1B101187C140000620D75 /* Cart-Info.plist */,
 				8BC1B102187C140000620D75 /* InfoPlist.strings */,
 				8BC1B105187C140000620D75 /* main.m */,
-				8BC1B107187C140000620D75 /* TableViewCustomCell-Prefix.pch */,
+				8BC1B107187C140000620D75 /* Cart-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = TableViewCustomCell;
@@ -212,7 +212,7 @@
 		8BC1B11F187C140100620D75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BC1B120187C140100620D75 /* TableViewCustomCellTests-Info.plist */,
+				8BC1B120187C140100620D75 /* CartTests-Info.plist */,
 				8BC1B121187C140100620D75 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -221,9 +221,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BC1B0F5187C140000620D75 /* TableViewCustomCell */ = {
+		8BC1B0F5187C140000620D75 /* Cart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BC1B128187C140100620D75 /* Build configuration list for PBXNativeTarget "TableViewCustomCell" */;
+			buildConfigurationList = 8BC1B128187C140100620D75 /* Build configuration list for PBXNativeTarget "Cart" */;
 			buildPhases = (
 				8BC1B0F2187C140000620D75 /* Sources */,
 				8BC1B0F3187C140000620D75 /* Frameworks */,
@@ -233,14 +233,14 @@
 			);
 			dependencies = (
 			);
-			name = TableViewCustomCell;
+			name = Cart;
 			productName = TableViewCustomCell;
-			productReference = 8BC1B0F6187C140000620D75 /* TableViewCustomCell.app */;
+			productReference = 8BC1B0F6187C140000620D75 /* Cart.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8BC1B116187C140100620D75 /* TableViewCustomCellTests */ = {
+		8BC1B116187C140100620D75 /* CartTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BC1B12B187C140100620D75 /* Build configuration list for PBXNativeTarget "TableViewCustomCellTests" */;
+			buildConfigurationList = 8BC1B12B187C140100620D75 /* Build configuration list for PBXNativeTarget "CartTests" */;
 			buildPhases = (
 				8BC1B113187C140100620D75 /* Sources */,
 				8BC1B114187C140100620D75 /* Frameworks */,
@@ -251,9 +251,9 @@
 			dependencies = (
 				8BC1B11D187C140100620D75 /* PBXTargetDependency */,
 			);
-			name = TableViewCustomCellTests;
+			name = CartTests;
 			productName = TableViewCustomCellTests;
-			productReference = 8BC1B117187C140100620D75 /* TableViewCustomCellTests.xctest */;
+			productReference = 8BC1B117187C140100620D75 /* CartTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -270,7 +270,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BC1B0F1187C140000620D75 /* Build configuration list for PBXProject "TableViewCustomCell" */;
+			buildConfigurationList = 8BC1B0F1187C140000620D75 /* Build configuration list for PBXProject "Cart" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -283,8 +283,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BC1B0F5187C140000620D75 /* TableViewCustomCell */,
-				8BC1B116187C140100620D75 /* TableViewCustomCellTests */,
+				8BC1B0F5187C140000620D75 /* Cart */,
+				8BC1B116187C140100620D75 /* CartTests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +345,7 @@
 /* Begin PBXTargetDependency section */
 		8BC1B11D187C140100620D75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BC1B0F5187C140000620D75 /* TableViewCustomCell */;
+			target = 8BC1B0F5187C140000620D75 /* Cart */;
 			targetProxy = 8BC1B11C187C140100620D75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -456,9 +456,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableViewCustomCell/TableViewCustomCell-Prefix.pch";
-				INFOPLIST_FILE = "TableViewCustomCell/TableViewCustomCell-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TableViewCustomCell/Cart-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCustomCell/Cart-Info.plist";
+				PRODUCT_NAME = Cart;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -469,9 +469,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableViewCustomCell/TableViewCustomCell-Prefix.pch";
-				INFOPLIST_FILE = "TableViewCustomCell/TableViewCustomCell-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TableViewCustomCell/Cart-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCustomCell/Cart-Info.plist";
+				PRODUCT_NAME = Cart;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -492,8 +492,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TableViewCustomCellTests/TableViewCustomCellTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TableViewCustomCellTests/CartTests-Info.plist";
+				PRODUCT_NAME = CartTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -511,8 +511,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableViewCustomCell/TableViewCustomCell-Prefix.pch";
-				INFOPLIST_FILE = "TableViewCustomCellTests/TableViewCustomCellTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TableViewCustomCellTests/CartTests-Info.plist";
+				PRODUCT_NAME = CartTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -521,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BC1B0F1187C140000620D75 /* Build configuration list for PBXProject "TableViewCustomCell" */ = {
+		8BC1B0F1187C140000620D75 /* Build configuration list for PBXProject "Cart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BC1B126187C140100620D75 /* Debug */,
@@ -530,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BC1B128187C140100620D75 /* Build configuration list for PBXNativeTarget "TableViewCustomCell" */ = {
+		8BC1B128187C140100620D75 /* Build configuration list for PBXNativeTarget "Cart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BC1B129187C140100620D75 /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BC1B12B187C140100620D75 /* Build configuration list for PBXNativeTarget "TableViewCustomCellTests" */ = {
+		8BC1B12B187C140100620D75 /* Build configuration list for PBXNativeTarget "CartTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BC1B12C187C140100620D75 /* Debug */,

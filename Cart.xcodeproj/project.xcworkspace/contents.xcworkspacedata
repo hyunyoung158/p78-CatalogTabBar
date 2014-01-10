@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TableViewCustomCell.xcodeproj">
+      location = "self:Cart.xcodeproj">
    </FileRef>
 </Workspace>
