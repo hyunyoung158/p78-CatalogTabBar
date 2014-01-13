@@ -14,7 +14,7 @@
 #import "CartCell.h"
 #import "ProductDetailViewController.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate, ProductCellDelegate>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, ProductCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
 @property (strong, nonatomic) Cart *cart;
@@ -43,6 +43,11 @@
     if (![self.cart cartItemWith:product.productCode]) {
         //없는 경우 카트에 추가
         [self.cart addProduct:product];
+        
+        //alertView 띄우기
+        //띄우는 delegate랑.. 구현하는 delegate랑 같아야 메소드를 불러올 수 있네요.
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"제목" message:@"카트에 담았습니다." delegate:self cancelButtonTitle:@"취소" otherButtonTitles:@"바로 확인하기", nil];
+        [alert show];
     }else {
         //이미 있는 상품일 경우 incQuantity
         [self.cart incQuantity:product.productCode];
@@ -62,6 +67,16 @@
     Product *product = [[Catalog defaultCatalog] productAt:(int)indexPath.row];
     [cell setProductInfo:product]; // Model을 UI에 반영
     return cell;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (alertView.firstOtherButtonIndex) {
+        //카트 화면으로 이동
+        self.tabBarController.selectedIndex = 1;
+
+    }else if (alertView.cancelButtonIndex) {
+        NSLog(@"취소");
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
