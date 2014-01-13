@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BC1B0F5187C140000620D75"
-               BuildableName = "TableViewCustomCell.app"
+               BuildableName = "Cart.app"
                BlueprintName = "Cart"
                ReferencedContainer = "container:Cart.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BC1B116187C140100620D75"
-               BuildableName = "TableViewCustomCellTests.xctest"
+               BuildableName = "CartTests.xctest"
                BlueprintName = "CartTests"
                ReferencedContainer = "container:Cart.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BC1B0F5187C140000620D75"
-            BuildableName = "TableViewCustomCell.app"
+            BuildableName = "Cart.app"
             BlueprintName = "Cart"
             ReferencedContainer = "container:Cart.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BC1B0F5187C140000620D75"
-            BuildableName = "TableViewCustomCell.app"
+            BuildableName = "Cart.app"
             BlueprintName = "Cart"
             ReferencedContainer = "container:Cart.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BC1B0F5187C140000620D75"
-            BuildableName = "TableViewCustomCell.app"
+            BuildableName = "Cart.app"
             BlueprintName = "Cart"
             ReferencedContainer = "container:Cart.xcodeproj">
          </BuildableReference>

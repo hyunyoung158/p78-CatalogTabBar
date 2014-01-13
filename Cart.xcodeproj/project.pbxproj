@@ -16,6 +16,7 @@
 		00ABAC89187E76450082D5A1 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABAC88187E76450082D5A1 /* CartCell.m */; };
 		00ABAC8C187E78320082D5A1 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABAC8B187E78320082D5A1 /* CartItem.m */; };
 		00ABADC1187FDE090082D5A1 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABADC0187FDE090082D5A1 /* ProductDetailViewController.m */; };
+		00ABC728188386E90038ACEE /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC727188386E90038ACEE /* CartViewController.m */; };
 		8BC1B0FA187C140000620D75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0F9187C140000620D75 /* Foundation.framework */; };
 		8BC1B0FC187C140000620D75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0FB187C140000620D75 /* CoreGraphics.framework */; };
 		8BC1B0FE187C140000620D75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1B0FD187C140000620D75 /* UIKit.framework */; };
@@ -60,6 +61,8 @@
 		00ABAC8B187E78320082D5A1 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartItem.m; path = TableViewCustomCell/CartItem.m; sourceTree = "<group>"; };
 		00ABADBF187FDE090082D5A1 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		00ABADC0187FDE090082D5A1 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		00ABC726188386E90038ACEE /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		00ABC727188386E90038ACEE /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
 		8BC1B0F6187C140000620D75 /* Cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC1B0F9187C140000620D75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BC1B0FB187C140000620D75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				00ABAC88187E76450082D5A1 /* CartCell.m */,
 				00ABAC8A187E78320082D5A1 /* CartItem.h */,
 				00ABAC8B187E78320082D5A1 /* CartItem.m */,
+				00ABC726188386E90038ACEE /* CartViewController.h */,
+				00ABC727188386E90038ACEE /* CartViewController.m */,
 			);
 			name = Cart;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 				00ABADC1187FDE090082D5A1 /* ProductDetailViewController.m in Sources */,
 				8BC1B110187C140000620D75 /* ViewController.m in Sources */,
 				8BC1B133187C1B1F00620D75 /* Product.m in Sources */,
+				00ABC728188386E90038ACEE /* CartViewController.m in Sources */,
 				8BC1B130187C14C900620D75 /* ProductCell.m in Sources */,
 				00ABAC8C187E78320082D5A1 /* CartItem.m in Sources */,
 				8BC1B10A187C140000620D75 /* AppDelegate.m in Sources */,

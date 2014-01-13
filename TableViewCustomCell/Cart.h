@@ -20,4 +20,5 @@
 - (void)incQuantity:(NSString *)productCode;
 - (void)decQuantity:(NSString *)productCode;
 - (CartItem *)cartItemWith:(NSString *)productCode;
++ (Cart *)sharedModel;
 @end

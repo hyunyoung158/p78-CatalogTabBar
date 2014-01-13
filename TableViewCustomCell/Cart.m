@@ -13,6 +13,16 @@
 @end
 @implementation Cart
 
+//싱클톤 방식
+static Cart *instance;
+
++ (Cart *)sharedModel {
+    if (nil == instance) {
+        instance = [[Cart alloc] init];
+    }
+    return instance;
+}
+
 //카트에 제품 추가!
 - (void)addProduct:(Product *)item {
     //이미 있는 상품일 경우 incQuantity

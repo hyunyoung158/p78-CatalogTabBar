@@ -13,5 +13,5 @@
 @interface ProductCell : UITableViewCell
 
 - (void)setProductInfo:(Product *)item;
-@property (weak) id<CartDelegate> delegate;
+@property (weak) id<ProductCellDelegate> delegate;
 @end
